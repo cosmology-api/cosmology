@@ -1,5 +1,5 @@
 [project]
-  name = "cosmology.core"
+  name = "cosmology"
   version = "0.1.0"
   description = "Cosmology API standard compatability library"
   readme = "README.rst"
@@ -22,7 +22,7 @@
     "Programming Language :: Python :: 3",
   ]
   dependencies = [
-    "cosmology.api @ git+https://github.com/python-cosmology/cosmology-api.git",
+    "cosmology.api @ git+https://github.com/cosmology-api/cosmology-api.git",
   ]
 
 [project.optional-dependencies]
@@ -93,9 +93,11 @@
   ]
 
 [tool.mypy]
+  python_version = 3.9
+
   namespace_packages = true
   explicit_package_bases = true
-  python_version = 3.9
+  mypy_path = "$MYPY_CONFIG_FILE_DIR/src"
 
   strict = true
   disallow_subclassing_any = false
@@ -126,6 +128,7 @@ ignore = [
   "ARG001", "ARG002",
   "D105", "D107", "D203", "D213",
   "FBT003",
+  "N802",
   "PD",
   "RET505", "RET506", "RET507",
 ]
