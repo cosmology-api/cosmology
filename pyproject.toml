@@ -26,6 +26,9 @@
   ]
 
 [project.optional-dependencies]
+  all = [
+    "cosmology.api >= 0.1.0",  # is this needed?
+  ]
   test = [
     "coverage[toml]",
     "numpy>=1.20",
