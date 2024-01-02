@@ -1,13 +1,12 @@
 Infrastructure:
 - changed-files:
-  - any-glob-to-any-file: [
-      ".github/**/*",
-      ".pre-commit-config.yaml",
-      ".readthedocs.yml",
-      ".gitignore",
-      "pyproject.toml",
-      "setup.cfg"
-    ]
+  - any-glob-to-any-file:
+    - .github/**/*
+    - .pre-commit-config.yaml
+    - .readthedocs.yml
+    - .gitignore
+    - pyproject.toml
+    - setup.cfg
 
 GitHub:
 - changed-files:
