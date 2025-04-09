@@ -1,10 +1,11 @@
-# ruff: noqa
+"""Sphinx extension to document the Cosmology API."""
+
 import sys
-from types import ModuleType
 from inspect import getmembers, getmro
+from types import ModuleType
+
 from sphinx.util.inspect import signature, stringify_signature
 
-# get_overloads is a Python 3.11 feature
 try:
     from typing import get_overloads
 except ImportError:
@@ -16,7 +17,7 @@ import cosmology.api
 DOCS_MODULE_NAME = "cosmology.docs"
 
 
-class cosmo(cosmology.api.StandardCosmology):
+class cosmo(cosmology.api.StandardCosmology):  # noqa: N801
     """This is a mock cosmology class used for documenting all members
     of the cosmology.api protocols.
     """

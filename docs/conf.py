@@ -1,5 +1,3 @@
-# ruff: noqa
-
 """Configuration file for the Sphinx documentation builder.
 
 This file only contains a selection of the most common options. For a full
@@ -7,9 +5,9 @@ list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 """
 
-
 import os
 import sys
+
 import tomli
 
 sys.path.append(os.path.abspath("../src"))
@@ -125,9 +123,6 @@ autodoc_default_options = {
 
 
 add_module_names = False
-
-# autodoc_class_signature = "separated"
-
 autosummary_generate = True
 
 
