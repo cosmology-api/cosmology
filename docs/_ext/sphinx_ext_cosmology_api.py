@@ -11,8 +11,9 @@ try:
 except ImportError:
     get_overloads = None
 
-import cosmology
 import cosmology.api
+
+import cosmology
 
 DOCS_MODULE_NAME = "cosmology.docs"
 
