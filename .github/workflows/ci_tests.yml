@@ -50,7 +50,7 @@ jobs:
         - windows: py310-test-alldeps
         - macos: py310-test-alldeps
 
-      conda: true
+      conda: false
       coverage: codecov
       fail-fast: true
     secrets:
