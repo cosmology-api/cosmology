@@ -31,7 +31,7 @@
   ]
   test = [
     "coverage[toml]",
-    "numpy>=2.0.2",
+    "numpy>=2.2.6",
     "pytest",
     "pytest-cov",
     "sybil",
@@ -55,9 +55,9 @@
 
 [build-system]
   requires = [
-    "mypy>=1.19.1",
+    "mypy>=2.1.0",
     "setuptools>=82.0.1",
-    "setuptools_scm[toml]>=9.2.2",
+    "setuptools_scm[toml]>=10.2.0",
     "wheel",
   ]
 
